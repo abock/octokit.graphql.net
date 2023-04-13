@@ -192,7 +192,7 @@ namespace Octokit.GraphQL.Core.Serializers
             {
                 builder.Append((bool)value ? "true" : "false");
             }
-            else if (value is int || value is float)
+            else if (value is int || value is float || value is double)
             {
                 builder.Append(value);
             }
